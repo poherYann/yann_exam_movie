@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catégories de Films{% endblock %}
+
+{% block body %}
+
+
+<div class="container">
+    <h1>Bienvenue dans les Catégories de Films</h1>
+    {#le but est que lorsque je clique sur une catégorie, ça m'envoi vers la liste des films#}
+    {% for categorie in categories %}
+    <ul>
+        <li><a href="">{{ categorie.nom }}</a></li>
+    </ul>
+    {% endfor %}
+</div>
+{% endblock %}
